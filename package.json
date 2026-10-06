@@ -1,0 +1,7 @@
+{
+  "name":"ai-story-studio-complete",
+  "version":"1.0.0",
+  "private":true,
+  "scripts":{"start":"node src/server.js"},
+  "dependencies":{"better-sqlite3":"^11.8.1","dotenv":"^16.4.7","express":"^5.1.0","jsonwebtoken":"^9.0.2","multer":"^1.4.5-lts.1"}
+}
