@@ -47,17 +47,3 @@ Never ask one AI video request to create a 30-minute movie. The app is designed 
 script → scenes → per-scene assets → narration → music/SFX → subtitles → FFmpeg assembly → MP4.
 
 If a scene fails, regenerate that scene only.
-
-
-## OpenRouter integration
-The server includes a secure `/api/ai/script` endpoint for OpenRouter.
-Set these values in `.env`:
-
-OPENROUTER_API_KEY=your_new_key
-OPENROUTER_MODEL=your_supported_model
-
-Never put the key in `public/` or frontend JavaScript. The key you previously
-posted in chat should be revoked and must not be reused.
-
-OpenRouter is used here for LLM/script/scene planning. Image, video, TTS and
-music still require compatible providers and their own server-side credentials.
